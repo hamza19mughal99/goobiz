@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goobiz</title>
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .carousel.carousel-slider {
+            top: -8px;
+        }
+
+        .main_input {
+            border: 1px solid #e0e0e0;
+            margin-right: 10px;
+            border-radius: 8px;
+        }
+
+        .input_div {
+            margin: 0;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            margin-left: 35px !important;
+            display: flex;
+            align-items: center;
+        }
+
+        .final_section {
+            font-weight: 500;
+            width: 90%;
+            margin-left: 5px;
+        }
+
+        li {
+            margin-bottom: 7px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- ------------------Navbar-------------------- -->
+
+    <nav>
+        <div class="nav-wrapper white">
+            <a href="#!" class="brand-logo"><img src="images/main-logo.png" /></a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger red-text"><i
+                    class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a style="margin-right: 10px; font-weight: 700;" class="red-text darken-2"
+                        href="index.html">Comprar</a></li>
+                <li><a style="margin-right: 10px;" class="grey-text" href="vender.html">Vender</a></li>
+                <li><a style="margin-right: 10px;" class="grey-text" href="blog.html">Blog</a></li>
+                <li><a style="margin-right: 10px;" class="grey-text" href="ajuda.html">Ajuda</a></li>
+                <li><a style="margin-right: 10px;" class="grey-text" href="login.html">Entrar</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="_blank">Comprar</a></li>
+        <li><a href="_blank">Vender</a></li>
+        <li><a href="_blank">Blog</a></li>
+        <li><a href="_blank">Ajuda</a></li>
+        <li><a href="_blank">Entrar</a></li>
+    </ul>
+
+    <!-- -----------------------Navbar end ----------------------- -->
+
+    <!-- -----------------------home carousel ---------------------------- -->
+    <div class="carousel carousel-slider">
+        <a class="carousel-item" href="#one!"><img src="images/carosel-img.jpg"></a>
+        <div class="carousel-fixed-item center">
+            <h1 class="white-text">Negócios e Franquias</h1>
+            <h5 class="white-text">Venda ou compre seu negócio com tranquilidade</h5>
+            <br />
+            <br />
+            <br />
+            <br />
+        </div>
+        <a class="carousel-item" href="#two!"><img src="images/carosel-img.jpg"></a>
+        <a class="carousel-item" href="#three!"><img src="images/carosel-img.jpg"></a>
+        <a class="carousel-item" href="#four!"><img src="images/carosel-img.jpg"></a>
+    </div>
+
+
+    <!-- --------------------------------search section------------------------------- -->
+
+    <section style="padding: 15px 0 0 0;" class="grey lighten-3">
+        <div class="container-fluid">
+            <div style="border-radius: 40px; margin: 5px 20px 5px 20px;;" class="row white">
+                <form class="col s12 m12">
+                    <div class="row input_div">
+                        <div class="main_input col m2 s6">
+                            <input style="border-bottom: none; padding: 0; margin: 0;"
+                                placeholder="Busque por franquia ou negócios" type="text">
+                        </div>
+                        <div class="col m2 s6">
+                            <select style="border-radius: 8px;" class="browser-default grey-text">
+                                <option value="" selected >Estado</option>
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                                <option value="3">Option 3</option>
+                            </select>
+                        </div>
+                        <div class="col m2 s6">
+                            <select style="border-radius: 8px;" class="browser-default grey-text">
+                                <option value="" selected >Cidade</option>
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                                <option value="3">Option 3</option>
+                            </select>
+                        </div>
+                        <div class="col m2 s6">
+                            <select style="border-radius: 8px;" class="browser-default grey-text">
+                                <option value="" selected >Segmento</option>
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                                <option value="3">Option 3</option>
+                            </select>
+                        </div>
+                        <div class="col m2 s6">
+                            <select style="border-radius: 8px;" class="browser-default grey-text">
+                                <option value="" selected >Investimento</option>
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                                <option value="3">Option 3</option>
+                            </select>
+                        </div>
+                        <div class="col m1 s6">
+                            <i style="padding: 10px;" class="material-icons red white-text circle">search
+                            </i>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div style="padding-left: 30px; padding-right: 30px; margin-top: 30px;">
+            <h5 class="grey-text text-darken-3">Negócios Populares</h5>
+
+            <div class="row">
+                <div class="col s12 m3">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="images/card_img_1.jpg">
+                        </div>
+                        <div class="card-content">
+                            <p style="font-weight: 500;" class="black-text">Franquia Lojas Beep</p>
+                            <div style="padding: 10px;" class="grey-text">
+                                <p>Lucratividade: 25%</p>
+                                <p>Existente desde 2018</p>
+                                <p>Faturamento Mensal: R$75.000,00</p>
+                                <p>Payback (Retorno): 2 anos</p>
+                                <p>Modelo de negócio: Franquia</p>
+                            </div>
+                            <h5>R$ 300.000</h5>
+
+                        </div>
+                        <div class="card-action grey-text">
+                            <p style="margin: 0">São Paulo - SP </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m3">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="images/price-2.png">
+                        </div>
+                        <div class="card-content">
+                            <p style="font-weight: 500;" class="black-text">Franquia Lojas Beep</p>
+                            <div style="padding: 10px;" class="grey-text">
+                                <p>Lucratividade: 25%</p>
+                                <p>Existente desde 2018</p>
+                                <p>Faturamento Mensal: R$75.000,00</p>
+                                <p>Payback (Retorno): 2 anos</p>
+                                <p>Modelo de negócio: Franquia</p>
+                            </div>
+                            <h5>R$ 300.000</h5>
+
+                        </div>
+                        <div class="card-action grey-text">
+                            <p style="margin: 0">São Paulo - SP </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m3">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="images/price3.png">
+                        </div>
+                        <div class="card-content">
+                            <p style="font-weight: 500;" class="black-text">Franquia Lojas Beep</p>
+                            <div style="padding: 10px;" class="grey-text">
+                                <p>Lucratividade: 25%</p>
+                                <p>Existente desde 2018</p>
+                                <p>Faturamento Mensal: R$75.000,00</p>
+                                <p>Payback (Retorno): 2 anos</p>
+                                <p>Modelo de negócio: Franquia</p>
+                            </div>
+                            <h5>R$ 300.000</h5>
+
+                        </div>
+                        <div class="card-action grey-text">
+                            <p style="margin: 0">São Paulo - SP </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m3">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="images/price4.png">
+                        </div>
+                        <div class="card-content">
+                            <p style="font-weight: 500;" class="black-text">Franquia Lojas Beep</p>
+                            <div style="padding: 10px;" class="grey-text">
+                                <p>Lucratividade: 25%</p>
+                                <p>Existente desde 2018</p>
+                                <p>Faturamento Mensal: R$75.000,00</p>
+                                <p>Payback (Retorno): 2 anos</p>
+                                <p>Modelo de negócio: Franquia</p>
+                            </div>
+                            <h5>R$ 300.000</h5>
+
+                        </div>
+                        <div class="card-action grey-text">
+                            <p style="margin: 0">São Paulo - SP </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="center">
+                    <a style="border-radius: 5px; margin: 20px;" class="waves-effect waves-light btn red white-text">Ver
+                        Mais Negócios
+                        Em Destaque</a>
+                </div>
+            </div>
+
+            <div style="margin: 20px 0 30px 0;" class="container-fluid">
+                <div class="row">
+                    <div class="col m9 s12">
+                        <img style="width: 100%; height: 250px;" src="images/left_main1.jpg" class="image-responsive" />
+                    </div>
+                    <div class="col m3 s12">
+                        <img style="width: 100%; height: 250px;" src="images/right_main1.jpg"
+                            class="image-responsive" />
+
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h5 style="margin-bottom: 20px;" class="grey-text text-darken-3">Oportunidades de Negócios</h5>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col m2 s6 center">
+                            <img src="images/sponse1.png" />
+                        </div>
+                        <div class="col m2 s6 center">
+                            <img src="images/sponse2.png" />
+                        </div>
+                        <div class="col m2 s6 center">
+                            <img src="images/sponse23.png" />
+                        </div>
+                        <div class="col m2 s6 center">
+                            <img src="images/sponse4.png" />
+                        </div>
+                        <div class="col m2 s6 center">
+                            <img src="images/sponse5.png" />
+                        </div>
+                        <div class="col m2 s6 center">
+                            <img src="images/sponse6.png" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h5 style="margin-bottom: 20px;" class="grey-text text-darken-3">Os negócios mais pesquisados hoje</h5>
+                <div class="row">
+                    <div class="col s12 m3">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="images/card_img_1.jpg">
+                            </div>
+                            <div class="card-content">
+                                <p style="font-weight: 500;" class="black-text">Franquia Lojas Beep</p>
+                                <div style="padding: 10px;" class="grey-text">
+                                    <p>Lucratividade: 25%</p>
+                                    <p>Existente desde 2018</p>
+                                    <p>Faturamento Mensal: R$75.000,00</p>
+                                    <p>Payback (Retorno): 2 anos</p>
+                                    <p>Modelo de negócio: Franquia</p>
+                                </div>
+                                <h5>R$ 300.000</h5>
+
+                            </div>
+                            <div class="card-action grey-text">
+                                <p style="margin: 0">São Paulo - SP </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col s12 m3">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="images/price-2.png">
+                            </div>
+                            <div class="card-content">
+                                <p style="font-weight: 500;" class="black-text">Franquia Lojas Beep</p>
+                                <div style="padding: 10px;" class="grey-text">
+                                    <p>Lucratividade: 25%</p>
+                                    <p>Existente desde 2018</p>
+                                    <p>Faturamento Mensal: R$75.000,00</p>
+                                    <p>Payback (Retorno): 2 anos</p>
+                                    <p>Modelo de negócio: Franquia</p>
+                                </div>
+                                <h5>R$ 300.000</h5>
+
+                            </div>
+                            <div class="card-action grey-text">
+                                <p style="margin: 0">São Paulo - SP </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col s12 m3">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="images/price3.png">
+                            </div>
+                            <div class="card-content">
+                                <p style="font-weight: 500;" class="black-text">Franquia Lojas Beep</p>
+                                <div style="padding: 10px;" class="grey-text">
+                                    <p>Lucratividade: 25%</p>
+                                    <p>Existente desde 2018</p>
+                                    <p>Faturamento Mensal: R$75.000,00</p>
+                                    <p>Payback (Retorno): 2 anos</p>
+                                    <p>Modelo de negócio: Franquia</p>
+                                </div>
+                                <h5>R$ 300.000</h5>
+
+                            </div>
+                            <div class="card-action grey-text">
+                                <p style="margin: 0">São Paulo - SP </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col s12 m3">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="images/price4.png">
+                            </div>
+                            <div class="card-content">
+                                <p style="font-weight: 500;" class="black-text">Franquia Lojas Beep</p>
+                                <div style="padding: 10px;" class="grey-text">
+                                    <p>Lucratividade: 25%</p>
+                                    <p>Existente desde 2018</p>
+                                    <p>Faturamento Mensal: R$75.000,00</p>
+                                    <p>Payback (Retorno): 2 anos</p>
+                                    <p>Modelo de negócio: Franquia</p>
+                                </div>
+                                <h5>R$ 300.000</h5>
+
+                            </div>
+                            <div class="card-action grey-text">
+                                <p style="margin: 0">São Paulo - SP </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="center">
+                        <a style="border-radius: 5px; margin: 20px;"
+                            class="waves-effect waves-light btn red white-text">Ver Mais Negócios
+                            Em Destaque</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col m3 s12">
+                        <img style="width: 100%; height: 250px;" src="images/left_main2.jpg" class="image-responsive" />
+                    </div>
+                    <div class="col m9 s12">
+                        <img style="width: 100%; height: 250px;" src="images/right_main2.jpg"
+                            class="image-responsive" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col s12 m2 offset-m1">
+                        <div style="border-radius: 10px;" class="card white darken-1">
+                            <div style="padding: 40px 0 40px 0;" class="card-content black-text center">
+                                <img src="images/truck-line.png" />
+                                <p>Agronegócio</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m2">
+                        <div style="border-radius: 10px;" class="card white darken-1">
+                            <div style="padding: 40px 0 40px 0;" class="card-content black-text center">
+                                <img src="images/cake-3-line.png" />
+                                <p>Alimentação</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m2">
+                        <div style="border-radius: 10px;" class="card white darken-1">
+                            <div style="padding: 40px 0 40px 0;" class="card-content black-text center">
+                                <img src="images/Group6.png" />
+                                <p>Casa e Contrução</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m2">
+                        <div style="border-radius: 10px;" class="card white darken-1">
+                            <div style="padding: 40px 0 40px 0;" class="card-content black-text center">
+                                <img src="images/ticket-line.png" />
+                                <p>Entretenimento e lazer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m2">
+                        <div style="border-radius: 10px;" class="card white darken-1">
+                            <div style="padding: 40px 0 40px 0;" class="card-content black-text center">
+                                <img src="images/hotel-bed-line.png" />
+                                <p>Hotelaria e turismo</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col s12 m2 offset-m1">
+                        <div style="border-radius: 10px;" class="card white darken-1">
+                            <div style="padding: 40px 0 40px 0;" class="card-content black-text center">
+                                <img src="images/Group.png" />
+                                <p>Serviços educacionais</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m2">
+                        <div style="border-radius: 10px;" class="card white darken-1">
+                            <div style="padding: 40px 0 40px 0;" class="card-content black-text center">
+                                <img src="images/Group2.png" />
+                                <p>Moda</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m2">
+                        <div style="border-radius: 10px;" class="card white darken-1">
+                            <div style="padding: 40px 0 40px 0;" class="card-content black-text center">
+                                <img src="images/Group1.png" />
+                                <p>Saúde, beleza e bem estar</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m2">
+                        <div style="border-radius: 10px;" class="card white darken-1">
+                            <div style="padding: 40px 0 40px 0;" class="card-content black-text center">
+                                <img src="images/Group3.png" />
+                                <p>Serviços e outros negócios</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m2">
+                        <div style="border-radius: 10px;" class="card white darken-1">
+                            <div style="padding: 40px 0 40px 0;" class="card-content black-text center">
+                                <img src="images/Group4.png" />
+                                <p>Ver Todos</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div style="padding: 30px;" class="red white-text darken-2">
+            <h3 style="font-weight: 600; margin-bottom: 30px;" class="center">Notícias sobre Franquias, Negócios e
+                Investimento</h3>
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col s12 m4">
+                        <div>
+                            <img style="width: 100%;" class="image-responsive" src="images/swim.png">
+                        </div>
+                        <div class="red white-text darken-2">
+                            <p style="margin-left: 5px;" class="white-text">Piscinas</p>
+                            <p class="final_section">Crise? iGUi cresce 72% em faturamento com venda de piscinas e chega
+                                a mil franquias</p>
+                        </div>
+                    </div>
+
+                    <div class="col s12 m4">
+                        <div>
+                            <img style="width: 100%;" class="image-responsive" src="images/credit.png">
+                        </div>
+                        <div class="red white-text darken-2">
+                            <p style="margin-left: 5px;" class="white-text">Piscinas</p>
+                            <p class="final_section">Crise? iGUi cresce 72% em faturamento com venda de piscinas e chega
+                                a mil franquias</p>
+                        </div>
+                    </div>
+
+                    <div class="col s12 m4">
+                        <div>
+                            <img style="width: 100%;" class="image-responsive" src="images/gym.png">
+                        </div>
+                        <div class="red white-text darken-2">
+                            <p style="margin-left: 5px;" class="white-text">Piscinas</p>
+                            <p class="final_section">Crise? iGUi cresce 72% em faturamento com venda de piscinas e chega
+                                a mil franquias</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="center">
+                <a style="border-radius: 5px;" class="waves-effect waves-light btn black white-text">Visitar Blog</a>
+            </div>
+        </div>
+
+
+    </section>
+<!-- ------------------------footer ------------------------------------------  -->
+    <footer class="page-footer black white-text">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col m3 l3 s12">
+                    <img src="images/footer-logo.png" />
+                </div>
+                <div class="col m3 l3 s12">
+                    <h5 class="white-text">Categorias</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-1" href="#!">Agronegócio</a></li>
+                        <li><a class="grey-text text-lighten-1" href="#!">Alimentação</a></li>
+                        <li><a class="grey-text text-lighten-1" href="#!">Casa e Contrução</a></li>
+                        <li><a class="grey-text text-lighten-1" href="#!">Entretenimento e lazer</a></li>
+                        <li><a class="grey-text text-lighten-1" href="#!">Hotelaria e turismo</a></li>
+                        <li><a class="grey-text text-lighten-1" href="#!">Serviços educacionais</a></li>
+                        <li><a class="grey-text text-lighten-1" href="#!">Moda</a></li>
+                        <li><a class="grey-text text-lighten-1" href="#!">Saúde, beleza e bem estar</a></li>
+                        <li><a class="grey-text text-lighten-1" href="#!">Serviços e outros negócios</a></li>
+                    </ul>
+                </div>
+                <div class="col m3 l3 s12">
+                    <h5 class="white-text">Empresa</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-1" href="#!">Minha conta</a></li>
+                        <li><a class="grey-text text-lighten-1" href="#!">Vender negócio</a></li>
+                        <li><a class="grey-text text-lighten-1" href="#!">Comprar negócio</a></li>
+                        <li><a class="grey-text text-lighten-1" href="#!">Blog</a></li>
+                        <li><a class="grey-text text-lighten-1" href="#!">Ajuda</a></li>
+                        <li><a class="grey-text text-lighten-1" href="#!">Quem somos</a></li>
+                        <li><a class="grey-text text-lighten-1" href="#!">Trabalhe conosco</a></li>
+                    </ul>
+                </div>
+                <div class="col m3 l3 s12">
+                    <h5 class="white-text">Contato</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-1" href="#!"> R. Sena Madureira, 151, Sala 812 Vila
+                                Mariana, São Paulo - SP </a></li>
+                        <li><a class="grey-text text-lighten-1" href="#!">+55 11 1234-5678</a></li>
+                        <li><a class="grey-text text-lighten-1" href="#!">contato@goobiz.com.br</a></li>
+                    </ul>
+
+                    <h5 style="margin-top: 50px;" class="white-text">Rede sociais</h5>
+                    <div style="margin-top: 15px;">
+                        <img style="margin-right: 10px;" src="images/whatsapp-line.png" />
+                        <img style="margin-right: 10px;" src="images/twitter-line.png" />
+                        <img style="margin-right: 10px;" src="images/youtube-line.png" />
+                        <img style="margin-right: 10px;" src="images/instagram-line.png" />
+                        <img style="margin-right: 10px;" src="images/facebook-circle-line.png" />
+                    </div>
+                </div>
+            </div>
+            <hr />
+        </div>
+
+        <div style="padding: 35px;" class="container-fluid">
+            <div class="row">
+                <div class="col m8 s12 text-darken-1">
+                    © 2021 Goobiz. Todos os direitos reservados <br />
+                    <span style="margin-right: 5px; margin-top: 8px;" class="grey-text"> Política de Privacidade </span>
+                    <span style="margin-right: 5px; margin-top: 8px;" class="grey-text">Termos e Condições </span>
+                    <span style="margin-right: 5px; margin-top: 8px;" class="grey-text"> Configurações de cookies
+                    </span>
+                </div>
+                <div class="col m4 s12">
+                    <a class="right" href="#!"><img src="images/app-store.png" /></a>
+                    <a style="margin-right: 10px;" class="right" href="#!"><img src="images/google-play.png" /></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+        });
+
+        $('.carousel.carousel-slider').carousel({
+            fullWidth: true,
+            indicators: true
+        });
+
+        document.addEventListener('contextmenu', (e) => {
+            e.preventDefault();
+        }
+        );
+        document.onkeydown = function (e) {
+            if (event.keyCode == 123) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+                return false;
+            }
+        }
+    </script>
+
+</body>
+
+</html>

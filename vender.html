@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goobiz</title>
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .carousel.carousel-slider {
+            top: -8px;
+        }
+
+        .main_input {
+            border: 1px solid #e0e0e0;
+            margin-right: 10px;
+            border-radius: 8px;
+        }
+
+        .input_div {
+            margin: 0;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            margin-left: 35px !important;
+            display: flex;
+            align-items: center;
+        }
+
+        .final_section {
+            font-weight: 500;
+            width: 90%;
+            margin-left: 5px;
+        }
+
+        li {
+            margin-bottom: 7px;
+        }
+
+        .vender_desc {
+            height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding-left: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ------------------Navbar-------------------- -->
+
+    <nav>
+        <div class="nav-wrapper white">
+            <a href="#!" class="brand-logo"><img src="images/main-logo.png" /></a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger red-text"><i
+                    class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a style="margin-right: 10px; font-weight: 700;" class="red-text darken-2"
+                        href="index.html">Comprar</a></li>
+                <li><a style="margin-right: 10px;" class="grey-text" href="vender.html">Vender</a></li>
+                <li><a style="margin-right: 10px;" class="grey-text" href="blog.html">Blog</a></li>
+                <li><a style="margin-right: 10px;" class="grey-text" href="ajuda.html">Ajuda</a></li>
+                <li><a style="margin-right: 10px;" class="grey-text" href="login.html">Entrar</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="_blank">Comprar</a></li>
+        <li><a href="_blank">Vender</a></li>
+        <li><a href="_blank">Blog</a></li>
+        <li><a href="_blank">Ajuda</a></li>
+        <li><a href="_blank">Entrar</a></li>
+    </ul>
+
+    <!-- -----------------------Navbar end ----------------------- -->
+
+    <!-- ----------------------------section-----------------------------  -->
+    <div style="background-image: url(images/vendor-main.png); height: 60vh; padding: 50px;" class="white-text">
+        <h2 style="margin: 0; width: 70%;" class="text-darken-4">Anuncie e venda seu negócio ou franquia pelo melhor
+            preço</h2>
+        <p>Donec sed erat ut magna suscipit mattis. Aliquam erat volutpat. Morbi in orci risus.
+            Donec pretium fringilla blandit.</p>
+        <a style="border-radius: 5px;"
+            class="waves-effect waves-light btn red darken-1 white-text text-darken-1">Anúnciar</a>
+    </div>
+    <!-- --------------------------------section end---------------------------------- -->
+
+    <!-- ------------------------------------section2---------------------------------------- -->
+    <div class="red white-text darken-2">
+        <div>
+            <h2 style="padding-top: 30px; margin: 0;" class="center">Vantagens</h2>
+        </div>
+
+        <div class="container-fluid">
+            <div style="margin-top: 20px; padding-bottom: 30px; margin-bottom: 0;" class="row">
+                <div class="col s12 m3 center">
+                    <img src="images/vendor-icon.png" class="responsive-img" />
+                    <h5>Segurança</h5>
+                    <p>Donec sed erat ut magna suscipit mattis. Aliquam erat volutpat. Morbi in orci risus. Donec
+                        pretium fringilla blandit.</p>
+                </div>
+
+                <div class="col s12 m3 center">
+                    <img src="images/vendor-icon4.png" class="responsive-img" />
+                    <h5>Visibilidade</h5>
+                    <p>Donec sed erat ut magna suscipit mattis. Aliquam erat volutpat. Morbi in orci risus. Donec
+                        pretium fringilla blandit.</p>
+                </div>
+
+                <div class="col s12 m3 center">
+                    <img src="images/vendor-icon2.png" class="responsive-img" />
+                    <h5>Independência</h5>
+                    <p>Donec sed erat ut magna suscipit mattis. Aliquam erat volutpat. Morbi in orci risus. Donec
+                        pretium fringilla blandit.</p>
+                </div>
+
+                <div class="col s12 m3 center">
+                    <img src="images/vendor-icon3.png" class="responsive-img" />
+                    <h5>Preço</h5>
+                    <p>Donec sed erat ut magna suscipit mattis. Aliquam erat volutpat. Morbi in orci risus. Donec
+                        pretium fringilla blandit.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------------------------section2---------------------------------------- -->
+
+    <!-- -----------------------------------section3------------------------------------------ -->
+    <div class="container-fluid">
+        <div class="row">
+            <div style="padding: 0;" class="col m6 s12">
+                <img style="width: 100%" src="images/vendor-fran.png" class="responsive-img" />
+            </div>
+            <div class="col m6 s12 vender_desc">
+                <div style="padding: 50px;">
+                    <h4>Franquias</h4>
+                    <p>Aumente a visibilidade da sua marca para franqueadores e potenciais investidores interessados.</p>
+                    <a style="border-radius: 5px;"
+                        class="waves-effect waves-light btn red darken-1 white-text text-darken-1">Anúnciar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col m6 s12 vender_desc">
+                <div style="padding: 50px;">
+                    <h4>Licenciamento</h4>
+                    <p>Aumente a visibilidade da sua marca para franqueadores e potenciais investidores interessados.</p>
+                    <a style="border-radius: 5px;"
+                        class="waves-effect waves-light btn red darken-1 white-text text-darken-1">Anúnciar</a>
+                </div>
+            </div>
+            <div style="padding: 0;" class="col m6 s12">
+                <img style="width: 100%" src="images/vender-lic.png" class="responsive-img" />
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div style="padding: 0;" class="col m6 s12">
+                <img style="width: 100%" src="images/vender-rep.png" class="responsive-img" />
+            </div>
+            <div class="col m6 s12 vender_desc">
+                <div style="padding: 50px;">
+                    <h4>Representação Comercial</h4>
+                    <p>Aumente a visibilidade da sua marca para franqueadores e potenciais investidores interessados.</p>
+                    <a style="border-radius: 5px;"
+                        class="waves-effect waves-light btn red darken-1 white-text text-darken-1">Anúnciar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col m6 s12 vender_desc">
+                <div style="padding: 50px;">
+                    <h4>Unidade Própria</h4>
+                    <p>Aumente a visibilidade da sua marca para franqueadores e potenciais investidores interessados.</p>
+                    <a style="border-radius: 5px;"
+                        class="waves-effect waves-light btn red darken-1 white-text text-darken-1">Anúnciar</a>
+                </div>
+            </div>
+            <div style="padding: 0;" class="col m6 s12">
+                <img style="width: 100%" src="images/vendor-uni.png" class="responsive-img" />
+            </div>
+        </div>
+    </div><div class="container-fluid">
+        <div class="row">
+            <div style="padding: 0;" class="col m6 s12">
+                <img style="width: 100%" src="images/vender-ven.png" class="responsive-img" />
+            </div>
+            <div class="col m6 s12 vender_desc">
+                <div style="padding: 50px;">
+                    <h4>Vendas Diretas</h4>
+                    <p>Aumente a visibilidade da sua marca para franqueadores e potenciais investidores interessados.</p>
+                    <a style="border-radius: 5px;"
+                        class="waves-effect waves-light btn red darken-1 white-text text-darken-1">Anúnciar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------------------------------section3------------------------------------------ -->
+
+    <!-- ------------------------footer ------------------------------------------  -->
+    <footer class="page-footer black white-text">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col m3 l3 s12">
+                    <img src="images/footer-logo.png" />
+                </div>
+                <div class="col m3 l3 s12">
+                    <h5 class="white-text">Categorias</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-1" href="#!">Agronegócio</a></li>
+                        <li><a class="grey-text text-lighten-1" href="#!">Alimentação</a></li>
+                        <li><a class="grey-text text-lighten-1" href="#!">Casa e Contrução</a></li>
+                        <li><a class="grey-text text-lighten-1" href="#!">Entretenimento e lazer</a></li>
+                        <li><a class="grey-text text-lighten-1" href="#!">Hotelaria e turismo</a></li>
+                        <li><a class="grey-text text-lighten-1" href="#!">Serviços educacionais</a></li>
+                        <li><a class="grey-text text-lighten-1" href="#!">Moda</a></li>
+                        <li><a class="grey-text text-lighten-1" href="#!">Saúde, beleza e bem estar</a></li>
+                        <li><a class="grey-text text-lighten-1" href="#!">Serviços e outros negócios</a></li>
+                    </ul>
+                </div>
+                <div class="col m3 l3 s12">
+                    <h5 class="white-text">Empresa</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-1" href="#!">Minha conta</a></li>
+                        <li><a class="grey-text text-lighten-1" href="#!">Vender negócio</a></li>
+                        <li><a class="grey-text text-lighten-1" href="#!">Comprar negócio</a></li>
+                        <li><a class="grey-text text-lighten-1" href="#!">Blog</a></li>
+                        <li><a class="grey-text text-lighten-1" href="#!">Ajuda</a></li>
+                        <li><a class="grey-text text-lighten-1" href="#!">Quem somos</a></li>
+                        <li><a class="grey-text text-lighten-1" href="#!">Trabalhe conosco</a></li>
+                    </ul>
+                </div>
+                <div class="col m3 l3 s12">
+                    <h5 class="white-text">Contato</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-1" href="#!"> R. Sena Madureira, 151, Sala 812 Vila
+                                Mariana, São Paulo - SP </a></li>
+                        <li><a class="grey-text text-lighten-1" href="#!">+55 11 1234-5678</a></li>
+                        <li><a class="grey-text text-lighten-1" href="#!">contato@goobiz.com.br</a></li>
+                    </ul>
+
+                    <h5 style="margin-top: 50px;" class="white-text">Rede sociais</h5>
+                    <div style="margin-top: 15px;">
+                        <img style="margin-right: 10px;" src="images/whatsapp-line.png" />
+                        <img style="margin-right: 10px;" src="images/twitter-line.png" />
+                        <img style="margin-right: 10px;" src="images/youtube-line.png" />
+                        <img style="margin-right: 10px;" src="images/instagram-line.png" />
+                        <img style="margin-right: 10px;" src="images/facebook-circle-line.png" />
+                    </div>
+                </div>
+            </div>
+            <hr />
+        </div>
+
+        <div style="padding: 35px;" class="container-fluid">
+            <div class="row">
+                <div class="col m8 s12 text-darken-1">
+                    © 2021 Goobiz. Todos os direitos reservados <br />
+                    <span style="margin-right: 5px; margin-top: 8px;" class="grey-text"> Política de Privacidade </span>
+                    <span style="margin-right: 5px; margin-top: 8px;" class="grey-text">Termos e Condições </span>
+                    <span style="margin-right: 5px; margin-top: 8px;" class="grey-text"> Configurações de cookies
+                    </span>
+                </div>
+                <div class="col m4 s12">
+                    <a class="right" href="#!"><img src="images/app-store.png" /></a>
+                    <a style="margin-right: 10px;" class="right" href="#!"><img src="images/google-play.png" /></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

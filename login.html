@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goobiz</title>
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <style>
+        .divider_main {
+            border-bottom: 1px solid #e3e3e3;
+            position: relative;
+            margin: 30px 0;
+        }
+
+        .divider_text {
+            position: absolute;
+            bottom: -10px;
+            left: 248px;
+            padding: 0 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ------------------Navbar-------------------- -->
+
+    <nav>
+        <div class="nav-wrapper white">
+            <a href="#!" class="brand-logo"><img src="images/main-logo.png" /></a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger red-text"><i
+                    class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a style="margin-right: 10px;" class="grey-text" href="index.html">Comprar</a></li>
+                <li><a style="margin-right: 10px;" class="grey-text" href="_blank">Vender</a></li>
+                <li><a style="margin-right: 10px;" class="grey-text" href="_blank">Blog</a></li>
+                <li><a style="margin-right: 10px;" class="grey-text" href="_blank">Ajuda</a></li>
+                <li><a style="margin-right: 10px;" class="red-text darken-2" href="_blank">Entrar</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="_blank">Comprar</a></li>
+        <li><a href="_blank">Vender</a></li>
+        <li><a href="_blank">Blog</a></li>
+        <li><a href="_blank">Ajuda</a></li>
+        <li><a href="_blank">Entrar</a></li>
+    </ul>
+
+    <!-- -----------------------Navbar end ----------------------- -->
+
+    <!-- -----------------------------section------------------------------ -->
+
+    <div class="container-fluid">
+        <div style="margin-bottom: 0;" class="row">
+            <div style="padding: 0;" class="col m6 s12">
+                <img src="images/login-main.png" class="responsive-img" />
+            </div>
+
+            <div class="col m6 s12 valign-wrapper">
+                <div class="container">
+                    <h5 class="grey-text">Entrar na sua conta</h5>
+                        <div class="row">
+                            <div class="input-field col s6 m12">
+                                <input placeholder="Digite seu e-mail" id="first_name" type="text" class="validate">
+                                <label for="E-mail">E-mail</label>
+                            </div>
+    
+                            <div class="input-field col s6 m12">
+                                <input placeholder="Digite sua senha" id="first_name" type="text" class="validate">
+                                <label for="Senha">Senha</label>
+                            </div>
+    
+                            <div class="col s12 m12">
+                                <a style="border-radius: 5px; width: 100%;"
+                                    class="waves-effect waves-light btn red darken-2 white-text">Ver
+                                    Entrar</a>
+                            </div>
+                            <div class="col s12 m12">
+                                <p class="red-text center">Esqueci minha senha</p>
+                                <p class="center">Não possui conta? <a class="red-text" href="register.html"> Cadastre-se </a></p>
+                            </div>
+    
+                            <div class="col s12 m12 divider_main">
+                                <span class="black-text white divider_text"> ou </span>
+                            </div>
+    
+                            <div style="margin-bottom: 20px;" class="col s12 m12">
+                                <a style="border-radius: 5px; width: 100%;"
+                                    class="waves-effect waves-light btn blue darken-1 white-text text-darken-1">Entrar com Facebook</a>
+                            </div>
+    
+                            <div style="margin-bottom: 20px;" class="col s12 m12">
+                                <a style="border-radius: 5px; width: 100%;"
+                                    class="waves-effect waves-light btn white darken-1 grey-text text-darken-1">Entrar com Google</a>
+                            </div>
+    
+                            <div style="margin-bottom: 20px;" class="col s12 m12">
+                                <a style="border-radius: 5px; width: 100%;"
+                                    class="waves-effect waves-light btn black darken-1 white-text text-darken-1">Entrar com Apple</a>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------------------------------section end ------------------------------- -->
+
+    <!-- ------------------------footer ------------------------------------------  -->
+    <footer class="page-footer black white-text">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col m3 l3 s12">
+                    <img src="images/footer-logo.png" />
+                </div>
+                <div class="col m3 l3 s12">
+                    <h5 class="white-text">Categorias</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-1" href="#!">Agronegócio</a></li>
+                        <li><a class="grey-text text-lighten-1" href="#!">Alimentação</a></li>
+                        <li><a class="grey-text text-lighten-1" href="#!">Casa e Contrução</a></li>
+                        <li><a class="grey-text text-lighten-1" href="#!">Entretenimento e lazer</a></li>
+                        <li><a class="grey-text text-lighten-1" href="#!">Hotelaria e turismo</a></li>
+                        <li><a class="grey-text text-lighten-1" href="#!">Serviços educacionais</a></li>
+                        <li><a class="grey-text text-lighten-1" href="#!">Moda</a></li>
+                        <li><a class="grey-text text-lighten-1" href="#!">Saúde, beleza e bem estar</a></li>
+                        <li><a class="grey-text text-lighten-1" href="#!">Serviços e outros negócios</a></li>
+                    </ul>
+                </div>
+                <div class="col m3 l3 s12">
+                    <h5 class="white-text">Empresa</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-1" href="#!">Minha conta</a></li>
+                        <li><a class="grey-text text-lighten-1" href="#!">Vender negócio</a></li>
+                        <li><a class="grey-text text-lighten-1" href="#!">Comprar negócio</a></li>
+                        <li><a class="grey-text text-lighten-1" href="#!">Blog</a></li>
+                        <li><a class="grey-text text-lighten-1" href="#!">Ajuda</a></li>
+                        <li><a class="grey-text text-lighten-1" href="#!">Quem somos</a></li>
+                        <li><a class="grey-text text-lighten-1" href="#!">Trabalhe conosco</a></li>
+                    </ul>
+                </div>
+                <div class="col m3 l3 s12">
+                    <h5 class="white-text">Contato</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-1" href="#!"> R. Sena Madureira, 151, Sala 812 Vila
+                                Mariana, São Paulo - SP </a></li>
+                        <li><a class="grey-text text-lighten-1" href="#!">+55 11 1234-5678</a></li>
+                        <li><a class="grey-text text-lighten-1" href="#!">contato@goobiz.com.br</a></li>
+                    </ul>
+
+                    <h5 style="margin-top: 50px;" class="white-text">Rede sociais</h5>
+                    <div style="margin-top: 15px;">
+                        <img style="margin-right: 10px;" src="images/whatsapp-line.png" />
+                        <img style="margin-right: 10px;" src="images/twitter-line.png" />
+                        <img style="margin-right: 10px;" src="images/youtube-line.png" />
+                        <img style="margin-right: 10px;" src="images/instagram-line.png" />
+                        <img style="margin-right: 10px;" src="images/facebook-circle-line.png" />
+                    </div>
+                </div>
+            </div>
+            <hr />
+        </div>
+
+        <div style="padding: 35px;" class="container-fluid">
+            <div class="row">
+                <div class="col m8 s12 text-darken-1">
+                    © 2021 Goobiz. Todos os direitos reservados <br />
+                    <span style="margin-right: 5px; margin-top: 8px;" class="grey-text"> Política de Privacidade </span>
+                    <span style="margin-right: 5px; margin-top: 8px;" class="grey-text">Termos e Condições </span>
+                    <span style="margin-right: 5px; margin-top: 8px;" class="grey-text"> Configurações de cookies
+                    </span>
+                </div>
+                <div class="col m4 s12">
+                    <a class="right" href="#!"><img src="images/app-store.png" /></a>
+                    <a style="margin-right: 10px;" class="right" href="#!"><img src="images/google-play.png" /></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

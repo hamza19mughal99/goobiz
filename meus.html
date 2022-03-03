@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goobiz</title>
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ------------------Navbar-------------------- -->
+
+    <nav>
+        <div class="nav-wrapper white">
+            <a href="#!" class="brand-logo"><img src="images/main-logo.png" /></a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger red-text"><i
+                    class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <div style='display: flex; justify-content: center; align-items: center;'>
+                    <p style="margin: 0;" class="red-text">CRIE UM NOVO ANÚNCIO E VENDA SEU NEGÓCIO</p>
+                    <img style="margin: 0 10px;" src="images/Ellipse 7.png" />
+                </div>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- -----------------------Navbar end ----------------------- -->
+
+    <!-- ----------------------section-------------------------- -->
+    <div class="container-fluid">
+        <div style="margin: 0;" class="row">
+            <div class="col m2 white">
+                <ul>
+                    <li style="margin: 15px">
+                        <div style="display: flex; align-items: center;">
+                            <i style="margin-right: 5px; font-size: 20px;" class=" tiny material-icons">search</i>
+                            Buscar
+                        </div>
+                    </li>
+
+                    <li style="margin: 15px">
+                        <div style="display: flex; align-items: center;">
+                            <i style="margin-right: 5px; font-size: 20px;" class=" tiny material-icons">search</i>
+                            Vender meu negócio
+                        </div>
+                    </li>
+
+                    <li style="margin: 15px">
+                        <div style="display: flex; align-items: center;" class="red-text">
+                            <i style="margin-right: 5px; font-size: 20px;" class=" tiny material-icons">search</i>
+                            Meus anúncios
+                        </div>
+                    </li>
+
+                    <li style="margin: 15px">
+                        <div style="display: flex; align-items: center;">
+                            <i style="margin-right: 5px; font-size: 20px;" class=" tiny material-icons">search</i>
+                            Propostas
+                        </div>
+                    </li>
+
+                    <li style="margin: 15px">
+                        <div style="display: flex; align-items: center;">
+                            <i style="margin-right: 5px; font-size: 20px;" class=" tiny material-icons">search</i>
+                            Favoritos
+                        </div>
+                    </li>
+
+                    <li style="margin: 15px">
+                        <div style="display: flex; align-items: center;">
+                            <i style="margin-right: 5px; font-size: 20px;" class=" tiny material-icons">search</i>
+                            Minha Conta
+                        </div>
+                    </li>
+
+                    <li style="margin: 15px">
+                        <div style="display: flex; align-items: center;">
+                            <i style="margin-right: 5px; font-size: 20px;" class=" tiny material-icons">search</i>
+                            Ajuda
+                        </div>
+                    </li>
+
+                    <li style="margin: 15px">
+                        <div style="display: flex; align-items: center;">
+                            <i style="margin-right: 5px; font-size: 20px;" class=" tiny material-icons">search</i>
+                            Sair
+                        </div>
+                    </li>
+
+                </ul>
+
+
+            </div>
+            <div style="padding: 15px;" class="col m10 grey lighten-4">
+                <h5>Meus Anúncios</h5>
+                <hr />
+
+                <div class="row">
+                    <div class="col s12">
+                        <ul class="tabs grey lighten-4">
+                            <li class="tab col s3"><a class="active" href="#test1">Ativos (1)</a></li>
+                            <li class="tab col s3"><a href="#test2">Inativos</a></li>
+                        </ul>
+                        <hr />
+                    </div>
+                    <div style="margin-top: 30px;" id="test1" class="col s12">
+                        <div class="container">
+                            <div style="border-radius: 5px;" class="row white">
+                                <div style="overflow: hidden; padding: 0;" class="col m3">
+                                    <img src="images/clothes-busm.png" />
+                                </div>
+                                <div class="col m9">
+                                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                                        <p>Franquia Lojas Beep</p>
+                                        <i style="font-size: 20px;" class=" tiny material-icons">create</i>
+                                    </div>
+                                    <p>R$ 300.000</p>
+                                    <hr />
+                                    <div style="display: flex;">
+                                        <p style="display: flex; margin: 0 10px"> <i
+                                                style="font-size: 20px; margin-right: 5px;"
+                                                class=" tiny material-icons">date_range</i> Criado em: 29/10/2021</p>
+                                        <p style="margin: 0;"><strong style="font-weight: 700">Status:</strong> Online
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div style="border-radius: 5px;" class="row white">
+                                <div style="overflow: hidden; padding: 0;" class="col m3">
+                                    <img src="images/clothes-busm.png" />
+                                </div>
+                                <div class="col m9">
+                                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                                        <p>Franquia Lojas Beep</p>
+                                        <i style="font-size: 20px;" class=" tiny material-icons">create</i>
+                                    </div>
+                                    <p>R$ 300.000</p>
+                                    <hr />
+                                    <div style="display: flex;">
+                                        <p style="display: flex; margin: 0 10px"> <i
+                                                style="font-size: 20px; margin-right: 5px;"
+                                                class=" tiny material-icons">date_range</i> Criado em: 29/10/2021</p>
+                                        <p style="margin: 0;"><strong style="font-weight: 700">Status:</strong> Online
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div style="border-radius: 5px;" class="row white">
+                                <div style="overflow: hidden; padding: 0;" class="col m3">
+                                    <img src="images/clothes-busm.png" />
+                                </div>
+                                <div class="col m9">
+                                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                                        <p>Franquia Lojas Beep</p>
+                                        <i style="font-size: 20px;" class=" tiny material-icons">create</i>
+                                    </div>
+                                    <p>R$ 300.000</p>
+                                    <hr />
+                                    <div style="display: flex;">
+                                        <p style="display: flex; margin: 0 10px"> <i
+                                                style="font-size: 20px; margin-right: 5px;"
+                                                class=" tiny material-icons">date_range</i> Criado em: 29/10/2021</p>
+                                        <p style="margin: 0;"><strong style="font-weight: 700">Status:</strong> Online
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                    <div style="margin-top: 30px;" id="test2" class="col s12">Test 2</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ----------------------section-------------------------- -->
+        <!-- ------------------------footer ------------------------------------------  -->
+        <footer class="page-footer black white-text">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col m3 l3 s12">
+                        <img src="images/footer-logo.png" />
+                    </div>
+                    <div class="col m3 l3 s12">
+                        <h5 class="white-text">Categorias</h5>
+                        <ul>
+                            <li><a class="grey-text text-lighten-1" href="#!">Agronegócio</a></li>
+                            <li><a class="grey-text text-lighten-1" href="#!">Alimentação</a></li>
+                            <li><a class="grey-text text-lighten-1" href="#!">Casa e Contrução</a></li>
+                            <li><a class="grey-text text-lighten-1" href="#!">Entretenimento e lazer</a></li>
+                            <li><a class="grey-text text-lighten-1" href="#!">Hotelaria e turismo</a></li>
+                            <li><a class="grey-text text-lighten-1" href="#!">Serviços educacionais</a></li>
+                            <li><a class="grey-text text-lighten-1" href="#!">Moda</a></li>
+                            <li><a class="grey-text text-lighten-1" href="#!">Saúde, beleza e bem estar</a></li>
+                            <li><a class="grey-text text-lighten-1" href="#!">Serviços e outros negócios</a></li>
+                        </ul>
+                    </div>
+                    <div class="col m3 l3 s12">
+                        <h5 class="white-text">Empresa</h5>
+                        <ul>
+                            <li><a class="grey-text text-lighten-1" href="#!">Minha conta</a></li>
+                            <li><a class="grey-text text-lighten-1" href="#!">Vender negócio</a></li>
+                            <li><a class="grey-text text-lighten-1" href="#!">Comprar negócio</a></li>
+                            <li><a class="grey-text text-lighten-1" href="#!">Blog</a></li>
+                            <li><a class="grey-text text-lighten-1" href="#!">Ajuda</a></li>
+                            <li><a class="grey-text text-lighten-1" href="#!">Quem somos</a></li>
+                            <li><a class="grey-text text-lighten-1" href="#!">Trabalhe conosco</a></li>
+                        </ul>
+                    </div>
+                    <div class="col m3 l3 s12">
+                        <h5 class="white-text">Contato</h5>
+                        <ul>
+                            <li><a class="grey-text text-lighten-1" href="#!"> R. Sena Madureira, 151, Sala 812 Vila
+                                    Mariana, São Paulo - SP </a></li>
+                            <li><a class="grey-text text-lighten-1" href="#!">+55 11 1234-5678</a></li>
+                            <li><a class="grey-text text-lighten-1" href="#!">contato@goobiz.com.br</a></li>
+                        </ul>
+
+                        <h5 style="margin-top: 50px;" class="white-text">Rede sociais</h5>
+                        <div style="margin-top: 15px;">
+                            <img style="margin-right: 10px;" src="images/whatsapp-line.png" />
+                            <img style="margin-right: 10px;" src="images/twitter-line.png" />
+                            <img style="margin-right: 10px;" src="images/youtube-line.png" />
+                            <img style="margin-right: 10px;" src="images/instagram-line.png" />
+                            <img style="margin-right: 10px;" src="images/facebook-circle-line.png" />
+                        </div>
+                    </div>
+                </div>
+                <hr />
+            </div>
+
+            <div style="padding: 35px;" class="container-fluid">
+                <div class="row">
+                    <div class="col m8 s12 text-darken-1">
+                        © 2021 Goobiz. Todos os direitos reservados <br />
+                        <span style="margin-right: 5px; margin-top: 8px;" class="grey-text"> Política de Privacidade
+                        </span>
+                        <span style="margin-right: 5px; margin-top: 8px;" class="grey-text">Termos e Condições </span>
+                        <span style="margin-right: 5px; margin-top: 8px;" class="grey-text"> Configurações de cookies
+                        </span>
+                    </div>
+                    <div class="col m4 s12">
+                        <a class="right" href="#!"><img src="images/app-store.png" /></a>
+                        <a style="margin-right: 10px;" class="right" href="#!"><img src="images/google-play.png" /></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            $(document).ready(function () {
+                $('.tabs').tabs();
+            });
+        </script>
+
+
+</body>
+</html>

@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goobiz</title>
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        [type="checkbox"].filled-in:checked+span:not(.lever):after {
+            top: 0;
+            width: 20px;
+            height: 20px;
+            border: 2px solid red;
+            background-color: red;
+            z-index: 0;
+        }
+
+
+        .main_input {
+            border: 1px solid #e0e0e0;
+            margin-right: 10px;
+            border-radius: 8px;
+        }
+
+        .cancel_btn {
+            border-radius: 25px;
+            border: 1px solid #F44336;
+            padding: 5px 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ------------------Navbar-------------------- -->
+
+    <nav>
+        <div class="nav-wrapper white">
+            <a href="#!" class="brand-logo"><img src="images/main-logo.png" /></a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger red-text"><i
+                    class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a style="margin-right: 10px; font-weight: 700;" class="red-text darken-2"
+                        href="index.html">Comprar</a></li>
+                <li><a style="margin-right: 10px;" class="grey-text" href="vender.html">Vender</a></li>
+                <li><a style="margin-right: 10px;" class="grey-text" href="blog.html">Blog</a></li>
+                <li><a style="margin-right: 10px;" class="grey-text" href="ajuda.html">Ajuda</a></li>
+                <li><a style="margin-right: 10px;" class="grey-text" href="login.html">Entrar</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="_blank">Comprar</a></li>
+        <li><a href="_blank">Vender</a></li>
+        <li><a href="_blank">Blog</a></li>
+        <li><a href="_blank">Ajuda</a></li>
+        <li><a href="_blank">Entrar</a></li>
+    </ul>
+
+    <!-- -----------------------Navbar end ----------------------- -->
+
+    <!-- ----------------------------section-----------------------------  -->
+    <div class="container-fluid grey lighten-4">
+        <div style="margin-bottom: 0;" class="row">
+            <div class="col m3 white black-text">
+                <div>
+                    <p>Tipo</p>
+                    <div>
+                        <p>
+                            <label>
+                                <input type="checkbox" class="filled-in " checked="checked" />
+                                <span>Próprio</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox" class="filled-in" />
+                                <span>Franquia</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox" class="filled-in" />
+                                <span>Licenciamento</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox" class="filled-in" />
+                                <span>Representação</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox" class="filled-in" />
+                                <span>Venda direta</span>
+                            </label>
+                        </p>
+                    </div>
+                </div>
+                <hr />
+
+                <div>
+                    <p>Situação</p>
+                    <div style="display: flex; justify-content: space-around;">
+                        <p>
+                            <label>
+                                <input type="checkbox" class="filled-in " checked="checked" />
+                                <span>Próprio</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox" class="filled-in" />
+                                <span>Franquia</span>
+                            </label>
+                        </p>
+                    </div>
+                </div>
+                <hr />
+
+                <div>
+                    <p>Tempo de retorno estimado</p>
+                    <div>
+                        <p>
+                            <label>
+                                <input type="checkbox" class="filled-in " checked="checked" />
+                                <span>Até 12 meses</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox" class="filled-in" />
+                                <span>13 a 24 meses</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox" class="filled-in" />
+                                <span>25 a 36 meses</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox" class="filled-in" />
+                                <span>37 a 48 meses</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox" class="filled-in" />
+                                <span>Acima de 48 meses</span>
+                            </label>
+                        </p>
+                    </div>
+                </div>
+                <hr />
+
+                <div>
+                    <p>Lucratividade mensal</p>
+                    <div>
+                        <p>
+                            <label>
+                                <input style="background-color: red;" type="checkbox" class="filled-in "
+                                    checked="checked" />
+                                <span>Abaixo do ponto de equilíbrio</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox" class="filled-in" />
+                                <span>0,1 a 5%</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox" class="filled-in" />
+                                <span>6 a 10%</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox" class="filled-in" />
+                                <span>11 a 15%</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox" class="filled-in" />
+                                <span>16 a 20%</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox" class="filled-in" />
+                                <span>Acima de 20%</span>
+                            </label>
+                        </p>
+                    </div>
+                </div>
+                <hr />
+
+                <div>
+                    <p>Tempo de dedicação</p>
+
+                    <div>
+                        <p>
+                            <label>
+                                <input style="background-color: red;" type="checkbox" class="filled-in "
+                                    checked="checked" />
+                                <span>Diária</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox" class="filled-in" />
+                                <span>Semanal</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox" class="filled-in" />
+                                <span>Mensal</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox" class="filled-in" />
+                                <span>Investidor (não precisa se dedicar)</span>
+                            </label>
+                        </p>
+                    </div>
+                </div>
+                <hr />
+
+                <div>
+                    <p>Quantidade de funcionários</p>
+
+                    <div>
+                        <p>
+                            <label>
+                                <input type="checkbox" class="filled-in " checked="checked" />
+                                <span>Nenhum</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox" class="filled-in" />
+                                <span>1 a 3</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox" class="filled-in" />
+                                <span>4 a 6</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox" class="filled-in" />
+                                <span>7 a 10</span>
+                            </label>
+                        </p>
+
+                        <p>
+                            <label>
+                                <input type="checkbox" class="filled-in" />
+                                <span>10 a 15</span>
+                            </label>
+                        </p>
+
+                        <p>
+                            <label>
+                                <input type="checkbox" class="filled-in" />
+                                <span>Acima de 15</span>
+                            </label>
+                        </p>
+                    </div>
+                </div>
+                <hr />
+
+                <div>
+                    <p>Área (m2): </p>
+
+                    <div style="display: flex; justify-content: space-between;">
+                        <div class="main_input">
+                            <input style="border-bottom: none; padding: 0; margin: 0;" placeholder="De: 1 m"
+                                type="text">
+                        </div>
+                        <div class="main_input">
+                            <input style="border-bottom: none; padding: 0; margin: 0;" placeholder="Até: 100 m"
+                                type="text">
+                        </div>
+                    </div>
+                </div>
+                <hr />
+
+                <div>
+                    <p>Formato</p>
+                    <div>
+                        <p>
+                            <label>
+                                <input type="checkbox" class="filled-in " checked="checked" />
+                                <span>Home office</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox" class="filled-in" />
+                                <span>Quiosque</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox" class="filled-in" />
+                                <span>Loja pequena</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox" class="filled-in" />
+                                <span>Loja média</span>
+                            </label>
+                        </p>
+
+                        <p>
+                            <label>
+                                <input type="checkbox" class="filled-in" />
+                                <span>Loja grande</span>
+                            </label>
+                        </p>
+
+                        <p>
+                            <label>
+                                <input type="checkbox" class="filled-in" />
+                                <span>Megastore</span>
+                            </label>
+                        </p>
+                    </div>
+
+                </div>
+                <hr />
+
+                <div>
+                    <p>Suporte oferecido</p>
+                    <div>
+                        <p>
+                            <label>
+                                <input type="checkbox" class="filled-in " checked="checked" />
+                                <span>Busca de ponto comercial</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox" class="filled-in" />
+                                <span>Treinamentos operacionais</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox" class="filled-in" />
+                                <span>Treinamentos de gestão</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox" class="filled-in" />
+                                <span>Software de gestão</span>
+                            </label>
+                        </p>
+
+                        <p>
+                            <label>
+                                <input type="checkbox" class="filled-in" />
+                                <span>Apoio de marketing e divulgação</span>
+                            </label>
+                        </p>
+
+                        <p>
+                            <label>
+                                <input type="checkbox" class="filled-in" />
+                                <span>Apoio no desenvolvimento de produtos e serviços</span>
+                            </label>
+                        </p>
+
+                        <p>
+                            <label>
+                                <input type="checkbox" class="filled-in" />
+                                <span>Apoio burocrático e com as documentações</span>
+                            </label>
+                        </p>
+                    </div>
+                </div>
+                <hr />
+
+                <div>
+                    <p>Prazo do contrato</p>
+                    <div>
+                        <p>
+                            <label>
+                                <input type="checkbox" class="filled-in " checked="checked" />
+                                <span>Indeterminado</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox" class="filled-in" />
+                                <span>1 ano, 2 anos</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox" class="filled-in" />
+                                <span>3 anos</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox" class="filled-in" />
+                                <span>4 anos</span>
+                            </label>
+                        </p>
+
+                        <p>
+                            <label>
+                                <input type="checkbox" class="filled-in" />
+                                <span>5 anos</span>
+                            </label>
+                        </p>
+
+                        <p>
+                            <label>
+                                <input type="checkbox" class="filled-in" />
+                                <span>Acima de 5 anos</span>
+                            </label>
+                        </p>
+                    </div>
+                </div>
+                <hr />
+
+                <div style="margin: 20px 0;" class="center">
+                    <a style="border-radius: 5px;" class="red-text">Limpar Filtros</a>
+                </div>
+            </div>
+
+            <div class="col m9">
+                <h4>Franquias</h4>
+                <div class="row">
+                    <div class="col m10">
+                        <h5>1,234 franquias encontradas</h5>
+                    </div>
+                    <div class="col m1.5">
+                        <select class="browser-default grey lighten-4 red-text">
+                            <option value="" selected>Relevância</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                        </select>
+                    </div>
+
+                </div>
+                <hr />
+
+                <div style="display: flex; justify-content: space-between; margin-bottom: 25px;">
+                    <div style="margin-top: 20px;" class="cancel_btn">
+                        <a class="red-text">Alimentação <i style="margin-left: 13px; font-size: 13px;"
+                                class="tiny material-icons">close</i></a>
+                    </div>
+                    <div style="margin-top: 20px;" class="cancel_btn">
+                        <a class="red-text">Restaurante <i style="margin-left: 13px; font-size: 13px;"
+                                class="tiny material-icons">close</i></a>
+                    </div>
+                    <div style="margin-top: 20px;" class="cancel_btn">
+                        <a class="red-text">Próprio <i style="margin-left: 13px; font-size: 13px;"
+                                class="tiny material-icons">close</i></a>
+                    </div>
+                    <div style="margin-top: 20px;" class="cancel_btn">
+                        <a class="red-text">Novo <i style="margin-left: 13px; font-size: 13px;"
+                                class="tiny material-icons">close</i></a>
+                    </div>
+                    <div style="margin-top: 20px;" class="cancel_btn">
+                        <a class="red-text">Até 12 meses <i style="margin-left: 13px; font-size: 13px;"
+                                class="tiny material-icons">close</i></a>
+                    </div>
+                    <div style="margin-top: 20px;" class="cancel_btn">
+                        <a class="red-text">Abaixo do ponto de equilíbrio <i style="margin-left: 13px; font-size: 13px;"
+                                class="tiny material-icons">close</i></a>
+                    </div>
+                    <div style="margin-top: 20px;" class="cancel_btn">
+                        <a class="red-text">Diária <i style="margin-left: 13px; font-size: 13px;"
+                                class="tiny material-icons">close</i></a>
+                    </div>
+                </div>
+                <hr />
+
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col m10">
+                            <div class="row">
+                                <div class="col s12 m4">
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <img src="images/beep-busm.png">
+                                        </div>
+                                        <div class="card-content">
+                                            <p style="font-weight: 500;" class="black-text">Franquia Lojas Beep</p>
+                                            <div style="padding: 10px;" class="grey-text">
+                                                <p>Lucratividade: 25%</p>
+                                                <p>Existente desde 2018</p>
+                                                <p>Faturamento Mensal: R$75.000,00</p>
+                                                <p>Payback (Retorno): 2 anos</p>
+                                                <p>Modelo de negócio: Franquia</p>
+                                            </div>
+                                            <h5>R$ 300.000</h5>
+
+                                        </div>
+                                        <div class="card-action grey-text">
+                                            <p style="margin: 0">São Paulo - SP </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col s12 m4">
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <img src="images/clothes-busm.png">
+                                        </div>
+                                        <div class="card-content">
+                                            <p style="font-weight: 500;" class="black-text">Franquia Lojas Beep</p>
+                                            <div style="padding: 10px;" class="grey-text">
+                                                <p>Lucratividade: 25%</p>
+                                                <p>Existente desde 2018</p>
+                                                <p>Faturamento Mensal: R$75.000,00</p>
+                                                <p>Payback (Retorno): 2 anos</p>
+                                                <p>Modelo de negócio: Franquia</p>
+                                            </div>
+                                            <h5>R$ 300.000</h5>
+
+                                        </div>
+                                        <div class="card-action grey-text">
+                                            <p style="margin: 0">São Paulo - SP </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col s12 m4">
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <img src="images/champ-busa.png">
+                                        </div>
+                                        <div class="card-content">
+                                            <p style="font-weight: 500;" class="black-text">Franquia Lojas Beep</p>
+                                            <div style="padding: 10px;" class="grey-text">
+                                                <p>Lucratividade: 25%</p>
+                                                <p>Existente desde 2018</p>
+                                                <p>Faturamento Mensal: R$75.000,00</p>
+                                                <p>Payback (Retorno): 2 anos</p>
+                                                <p>Modelo de negócio: Franquia</p>
+                                            </div>
+                                            <h5>R$ 300.000</h5>
+
+                                        </div>
+                                        <div class="card-action grey-text">
+                                            <p style="margin: 0">São Paulo - SP </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col s12 m4">
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <img src="images/bottle-busm.png">
+                                        </div>
+                                        <div class="card-content">
+                                            <p style="font-weight: 500;" class="black-text">Franquia Lojas Beep</p>
+                                            <div style="padding: 10px;" class="grey-text">
+                                                <p>Lucratividade: 25%</p>
+                                                <p>Existente desde 2018</p>
+                                                <p>Faturamento Mensal: R$75.000,00</p>
+                                                <p>Payback (Retorno): 2 anos</p>
+                                                <p>Modelo de negócio: Franquia</p>
+                                            </div>
+                                            <h5>R$ 300.000</h5>
+
+                                        </div>
+                                        <div class="card-action grey-text">
+                                            <p style="margin: 0">São Paulo - SP </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col s12 m4">
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <img src="images/sale-busm.png">
+                                        </div>
+                                        <div class="card-content">
+                                            <p style="font-weight: 500;" class="black-text">Franquia Lojas Beep</p>
+                                            <div style="padding: 10px;" class="grey-text">
+                                                <p>Lucratividade: 25%</p>
+                                                <p>Existente desde 2018</p>
+                                                <p>Faturamento Mensal: R$75.000,00</p>
+                                                <p>Payback (Retorno): 2 anos</p>
+                                                <p>Modelo de negócio: Franquia</p>
+                                            </div>
+                                            <h5>R$ 300.000</h5>
+
+                                        </div>
+                                        <div class="card-action grey-text">
+                                            <p style="margin: 0">São Paulo - SP </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col s12 m4">
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <img src="images/brew-busm.png">
+                                        </div>
+                                        <div class="card-content">
+                                            <p style="font-weight: 500;" class="black-text">Franquia Lojas Beep</p>
+                                            <div style="padding: 10px;" class="grey-text">
+                                                <p>Lucratividade: 25%</p>
+                                                <p>Existente desde 2018</p>
+                                                <p>Faturamento Mensal: R$75.000,00</p>
+                                                <p>Payback (Retorno): 2 anos</p>
+                                                <p>Modelo de negócio: Franquia</p>
+                                            </div>
+                                            <h5>R$ 300.000</h5>
+
+                                        </div>
+                                        <div class="card-action grey-text">
+                                            <p style="margin: 0">São Paulo - SP </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col s12 m4">
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <img src="images/bottle-busm.png">
+                                        </div>
+                                        <div class="card-content">
+                                            <p style="font-weight: 500;" class="black-text">Franquia Lojas Beep</p>
+                                            <div style="padding: 10px;" class="grey-text">
+                                                <p>Lucratividade: 25%</p>
+                                                <p>Existente desde 2018</p>
+                                                <p>Faturamento Mensal: R$75.000,00</p>
+                                                <p>Payback (Retorno): 2 anos</p>
+                                                <p>Modelo de negócio: Franquia</p>
+                                            </div>
+                                            <h5>R$ 300.000</h5>
+
+                                        </div>
+                                        <div class="card-action grey-text">
+                                            <p style="margin: 0">São Paulo - SP </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col s12 m4">
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <img src="images/cafe-busm.png">
+                                        </div>
+                                        <div class="card-content">
+                                            <p style="font-weight: 500;" class="black-text">Franquia Lojas Beep</p>
+                                            <div style="padding: 10px;" class="grey-text">
+                                                <p>Lucratividade: 25%</p>
+                                                <p>Existente desde 2018</p>
+                                                <p>Faturamento Mensal: R$75.000,00</p>
+                                                <p>Payback (Retorno): 2 anos</p>
+                                                <p>Modelo de negócio: Franquia</p>
+                                            </div>
+                                            <h5>R$ 300.000</h5>
+
+                                        </div>
+                                        <div class="card-action grey-text">
+                                            <p style="margin: 0">São Paulo - SP </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col s12 m4">
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <img src="images/candid-busm.png">
+                                        </div>
+                                        <div class="card-content">
+                                            <p style="font-weight: 500;" class="black-text">Franquia Lojas Beep</p>
+                                            <div style="padding: 10px;" class="grey-text">
+                                                <p>Lucratividade: 25%</p>
+                                                <p>Existente desde 2018</p>
+                                                <p>Faturamento Mensal: R$75.000,00</p>
+                                                <p>Payback (Retorno): 2 anos</p>
+                                                <p>Modelo de negócio: Franquia</p>
+                                            </div>
+                                            <h5>R$ 300.000</h5>
+
+                                        </div>
+                                        <div class="card-action grey-text">
+                                            <p style="margin: 0">São Paulo - SP </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col s12 m4">
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <img src="images/sale-busm.png">
+                                        </div>
+                                        <div class="card-content">
+                                            <p style="font-weight: 500;" class="black-text">Franquia Lojas Beep</p>
+                                            <div style="padding: 10px;" class="grey-text">
+                                                <p>Lucratividade: 25%</p>
+                                                <p>Existente desde 2018</p>
+                                                <p>Faturamento Mensal: R$75.000,00</p>
+                                                <p>Payback (Retorno): 2 anos</p>
+                                                <p>Modelo de negócio: Franquia</p>
+                                            </div>
+                                            <h5>R$ 300.000</h5>
+
+                                        </div>
+                                        <div class="card-action grey-text">
+                                            <p style="margin: 0">São Paulo - SP </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col s12 m4">
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <img src="images/bag-busm.png">
+                                        </div>
+                                        <div class="card-content">
+                                            <p style="font-weight: 500;" class="black-text">Franquia Lojas Beep</p>
+                                            <div style="padding: 10px;" class="grey-text">
+                                                <p>Lucratividade: 25%</p>
+                                                <p>Existente desde 2018</p>
+                                                <p>Faturamento Mensal: R$75.000,00</p>
+                                                <p>Payback (Retorno): 2 anos</p>
+                                                <p>Modelo de negócio: Franquia</p>
+                                            </div>
+                                            <h5>R$ 300.000</h5>
+
+                                        </div>
+                                        <div class="card-action grey-text">
+                                            <p style="margin: 0">São Paulo - SP </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col s12 m4">
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <img src="images/clothes-busm.png">
+                                        </div>
+                                        <div class="card-content">
+                                            <p style="font-weight: 500;" class="black-text">Franquia Lojas Beep</p>
+                                            <div style="padding: 10px;" class="grey-text">
+                                                <p>Lucratividade: 25%</p>
+                                                <p>Existente desde 2018</p>
+                                                <p>Faturamento Mensal: R$75.000,00</p>
+                                                <p>Payback (Retorno): 2 anos</p>
+                                                <p>Modelo de negócio: Franquia</p>
+                                            </div>
+                                            <h5>R$ 300.000</h5>
+
+                                        </div>
+                                        <div class="card-action grey-text">
+                                            <p style="margin: 0">São Paulo - SP </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col m2">
+                            <img src="images/blog-right.png" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------------------section-----------------------------  -->
+
+    <!-- ------------------------footer ------------------------------------------  -->
+    <footer class="page-footer black white-text">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col m3 l3 s12">
+                    <img src="images/footer-logo.png" />
+                </div>
+                <div class="col m3 l3 s12">
+                    <h5 class="white-text">Categorias</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-1" href="#!">Agronegócio</a></li>
+                        <li><a class="grey-text text-lighten-1" href="#!">Alimentação</a></li>
+                        <li><a class="grey-text text-lighten-1" href="#!">Casa e Contrução</a></li>
+                        <li><a class="grey-text text-lighten-1" href="#!">Entretenimento e lazer</a></li>
+                        <li><a class="grey-text text-lighten-1" href="#!">Hotelaria e turismo</a></li>
+                        <li><a class="grey-text text-lighten-1" href="#!">Serviços educacionais</a></li>
+                        <li><a class="grey-text text-lighten-1" href="#!">Moda</a></li>
+                        <li><a class="grey-text text-lighten-1" href="#!">Saúde, beleza e bem estar</a></li>
+                        <li><a class="grey-text text-lighten-1" href="#!">Serviços e outros negócios</a></li>
+                    </ul>
+                </div>
+                <div class="col m3 l3 s12">
+                    <h5 class="white-text">Empresa</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-1" href="#!">Minha conta</a></li>
+                        <li><a class="grey-text text-lighten-1" href="#!">Vender negócio</a></li>
+                        <li><a class="grey-text text-lighten-1" href="#!">Comprar negócio</a></li>
+                        <li><a class="grey-text text-lighten-1" href="#!">Blog</a></li>
+                        <li><a class="grey-text text-lighten-1" href="#!">Ajuda</a></li>
+                        <li><a class="grey-text text-lighten-1" href="#!">Quem somos</a></li>
+                        <li><a class="grey-text text-lighten-1" href="#!">Trabalhe conosco</a></li>
+                    </ul>
+                </div>
+                <div class="col m3 l3 s12">
+                    <h5 class="white-text">Contato</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-1" href="#!"> R. Sena Madureira, 151, Sala 812 Vila
+                                Mariana, São Paulo - SP </a></li>
+                        <li><a class="grey-text text-lighten-1" href="#!">+55 11 1234-5678</a></li>
+                        <li><a class="grey-text text-lighten-1" href="#!">contato@goobiz.com.br</a></li>
+                    </ul>
+
+                    <h5 style="margin-top: 50px;" class="white-text">Rede sociais</h5>
+                    <div style="margin-top: 15px;">
+                        <img style="margin-right: 10px;" src="images/whatsapp-line.png" />
+                        <img style="margin-right: 10px;" src="images/twitter-line.png" />
+                        <img style="margin-right: 10px;" src="images/youtube-line.png" />
+                        <img style="margin-right: 10px;" src="images/instagram-line.png" />
+                        <img style="margin-right: 10px;" src="images/facebook-circle-line.png" />
+                    </div>
+                </div>
+            </div>
+            <hr />
+        </div>
+
+        <div style="padding: 35px;" class="container-fluid">
+            <div class="row">
+                <div class="col m8 s12 text-darken-1">
+                    © 2021 Goobiz. Todos os direitos reservados <br />
+                    <span style="margin-right: 5px; margin-top: 8px;" class="grey-text"> Política de Privacidade </span>
+                    <span style="margin-right: 5px; margin-top: 8px;" class="grey-text">Termos e Condições </span>
+                    <span style="margin-right: 5px; margin-top: 8px;" class="grey-text"> Configurações de cookies
+                    </span>
+                </div>
+                <div class="col m4 s12">
+                    <a class="right" href="#!"><img src="images/app-store.png" /></a>
+                    <a style="margin-right: 10px;" class="right" href="#!"><img src="images/google-play.png" /></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
